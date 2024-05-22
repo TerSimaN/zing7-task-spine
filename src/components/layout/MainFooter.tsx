@@ -23,7 +23,7 @@ const services_section_links = [
 
 const MainFooter = () => {
     return (
-        <footer className="bg-spine-neutral-700">
+        <footer className="bg-spine-neutral-800">
             <div className="container lg:px-0 px-6 lg:pt-20 pt-[3.75rem]">
                 <div className="flex lg:flex-row flex-col lg:space-x-[8.5rem]">
                     <div className="flex flex-col max-lg:items-center space-y-7 max-w-[23rem]">
@@ -82,7 +82,7 @@ const MainFooter = () => {
                                     type="email"
                                     placeholder="Enter email address"
                                 />
-                                <button className="bg-spine-pale-lime rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-700 px-6 py-3">
+                                <button className="bg-spine-pale-lime rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3">
                                     Get Start
                                 </button>
                             </form>

@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react";
 import LogoMark from "../ui/LogoMark";
@@ -23,8 +22,8 @@ const MainHeader = () => {
             <nav className="mx-auto flex items-center justify-between p-6 lg:px-8">
                 <div className="flex lg:flex-1">
                     <Link href={'/'} className="flex items-end gap-x-1 -m-1.5 p-1.5">
-                        <LogoMark className="fill-spine-neutral-700" />
-                        <LogoTypo className="fill-spine-neutral-700" />
+                        <LogoMark className="fill-spine-neutral-800" />
+                        <LogoTypo className="fill-spine-neutral-800" />
                     </Link>
                 </div>
                 <div className="flex lg:hidden">
@@ -37,7 +36,7 @@ const MainHeader = () => {
                 <ul className="hidden lg:flex gap-x-6">
                     {links.map((link, index) => (
                         <li key={index} className={`flex flex-col items-center font-poppins font-bold text-web-body-2 mx-6`}>
-                            <Link href={link.href} className={`${selected === index ? `text-spine-neutral-700` : `text-spine-neutral-500`}`} onClick={() => setSelected(index)}>
+                            <Link href={link.href} className={`${selected === index ? `text-spine-neutral-800` : `text-spine-neutral-600`}`} onClick={() => setSelected(index)}>
                                 {link.name}
                             </Link>
                             <div className={`border-2 rounded-full ${selected === index ? `border-spine-pale-lime` : `border-transparent`} w-5`}></div>
@@ -45,18 +44,18 @@ const MainHeader = () => {
                     ))}
                 </ul>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <button className="border border-spine-neutral-700 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-700 px-6 py-3">
+                    <button className="border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3">
                         Sign Up
                     </button>
                 </div>
             </nav>
             <div className={`lg:hidden ${open ? `` : `hidden`}`}>
-                <div className="fixed inset-0 z-10"></div>
-                <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm">
+                <div className="fixed inset-0 z-50 bg-white"></div>
+                <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-b from-spine-pale-lime/50 via-spine-pale-lime/0 to-white px-6 py-6 sm:max-w-sm">
                     <div className="flex items-center justify-between">
-                        <Link href={'/'} className="flex items-end gap-x-1 -m-1.5 p-1.5">
-                            <LogoMark className="fill-spine-neutral-700" />
-                            <LogoTypo className="fill-spine-neutral-700" />
+                        <Link href={'/'} className="flex items-end gap-x-1 -m-1.5 p-1.5" onClick={() => setOpen(!open)}>
+                            <LogoMark className="fill-spine-neutral-800" />
+                            <LogoTypo className="fill-spine-neutral-800" />
                         </Link>
                         <button className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5" type="button" onClick={() => setOpen(!open)}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9">
@@ -76,7 +75,7 @@ const MainHeader = () => {
                                 ))}
                             </ul>
                             <div className="py-6">
-                                <button className="block border rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-700 -mx-3 px-6 py-3">Sign Up</button>
+                                <button className="block bg-spine-pale-lime border rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 -mx-3 px-6 py-3">Sign Up</button>
                             </div>
                         </div>
                     </div>
