@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${sf_pro.variable}`}>
+      <body className={`${poppins.variable} ${sf_pro.variable} bg-gradient-to-b from-spine-pale-lime/50 via-white to-white lg:to-50% to-35%`}>
         <MainHeader />
         {children}
         <MainFooter />
