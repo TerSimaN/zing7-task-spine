@@ -21,9 +21,10 @@ const config: Config = {
             200: '#EBEBEB',
             300: '#DCDCDC',
             400: '#7B7B7B',
-            500: '#464646',
-            600: '#353535',
-            700: '#0C0C0C'
+            500: '#606060',
+            600: '#464646',
+            700: '#353535',
+            800: '#0C0C0C'
           },
           'pale-lime': '#B4FF5C',
           'anti-flash-white': '#F1F4F5'
@@ -37,7 +38,8 @@ const config: Config = {
         'web-display-1': ['88px', '110%'],
         'web-display-2': ['72px', '110%'],
         'web-display-3': ['64px', '110%'],
-        'web-display-4': ['24px', '110%'],
+        'web-display-4': ['56px', '110%'],
+        'web-display-5': ['24px', '110%'],
         'web-body-1': ['20px', '140%'],
         'web-body-2': ['16px', '140%'],
         'web-body-3': ['14px', '140%'],
