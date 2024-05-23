@@ -7,10 +7,10 @@ import LogoTypo from "../ui/LogoTypo";
 
 const links = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'FAQ', href: '#' },
-    { name: 'Contact', href: '#' }
+    { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'FAQ', href: '#faq' },
+    { name: 'Contact', href: '#contact' }
 ]
 
 const MainHeader = () => {
@@ -21,7 +21,7 @@ const MainHeader = () => {
         <header className="container">
             <nav className="mx-auto flex items-center justify-between p-6 lg:px-8">
                 <div className="flex lg:flex-1">
-                    <Link href={'/'} className="flex items-end gap-x-1 -m-1.5 p-1.5">
+                    <Link href={'/'} className="flex items-end gap-x-1 -m-1.5 p-1.5" onClick={() => setSelected(0)}>
                         <LogoMark className="fill-spine-neutral-800" />
                         <LogoTypo className="fill-spine-neutral-800" />
                     </Link>

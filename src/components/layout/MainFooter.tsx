@@ -7,10 +7,10 @@ import InstagramLogo from "../ui/InstagramLogo"
 
 const menu_section_links = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'FAQ', href: '#' },
-    { name: 'Contact', href: '#' }
+    { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'FAQ', href: '#faq' },
+    { name: 'Contact', href: '#contact' }
 ];
 
 const services_section_links = [
