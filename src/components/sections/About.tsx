@@ -12,7 +12,7 @@ const About = () => {
               Unlocking Digital Excellence
             </h1>
             <p className="font-poppins font-bold lg:text-web-body-2 text-body-1 text-spine-neutral-600">
-              At Spine, we're on a mission to empower businesses with the digital tools and
+              At Spine, we&apos;re on a mission to empower businesses with the digital tools and
               expertise they need to thrive in the ever-evolving online landscape.
             </p>
           </div>
@@ -20,13 +20,13 @@ const About = () => {
             <li className="flex items-center space-x-3">
               <Image src={list_point} alt="point" />
               <span>
-                <span className="text-spine-neutral-800">Our Team:</span> Introduce the core members of your team, their expertise, and their commitment to your clients' success.
+                <span className="text-spine-neutral-800">Our Team:</span> Introduce the core members of your team, their expertise, and their commitment to your clients&apos; success.
               </span>
             </li>
             <li className="flex items-center space-x-3">
               <Image src={list_point} alt="point" />
               <span>
-                <span className="text-spine-neutral-800">Core Values:</span> Share your company's core values and the principles that guide your work.О
+                <span className="text-spine-neutral-800">Core Values:</span> Share your company&apos;s core values and the principles that guide your work.
               </span>
             </li>
             <li className="flex items-center space-x-3">

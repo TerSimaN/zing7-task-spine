@@ -17,7 +17,7 @@ const Header = () => {
             </h1>
             <p className="font-poppins font-bold lg:text-web-body-2 text-body-1 text-spine-neutral-500 text-center">
               Elevate your online presence with Spine cutting-edge solutions.
-              Discover limitless possibilities for your digital agency's success.
+              Discover limitless possibilities for your digital agency&apos;s success.
             </p>
           </div>
           <button className="bg-spine-pale-lime rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3.5 w-[9.5rem]">

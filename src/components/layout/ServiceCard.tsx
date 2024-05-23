@@ -10,7 +10,7 @@ const ServiceCard = (props: {
     isVisible: boolean
 }) => {
     return (
-        <div className={`${props.isVisible ? `` : `hidden`} flex lg:flex-row flex-col items-center lg:space-x-[3.75rem] lg:space-y-0 space-y-10 lg:min-w-[73.125rem]`}>
+        <div className={`${props.isVisible ? `` : `hidden`} flex lg:flex-row flex-col items-center lg:space-x-[3.75rem] lg:space-y-0 space-y-10 lg:min-w-[73.125rem] min-w-full`}>
             <div className="bg-white rounded-[1.75rem] lg:w-[25.5rem] w-[21rem] lg:h-[25.5rem] h-[21rem]">
                 <Image
                     src={props.imgSrc}

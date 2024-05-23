@@ -33,7 +33,7 @@ const MainFooter = () => {
                         </Link>
                         <p className="font-poppins font-bold text-web-body-3 text-spine-neutral-300 lg:text-left text-center">
                             Spine is the ultimate boost for your online presence.
-                            We're here to supercharge your digital agency's journey.
+                            We&apos;re here to supercharge your digital agency&apos;s journey.
                         </p>
                         <div className="flex space-x-5">
                             <Link href={'https://www.facebook.com/'}>

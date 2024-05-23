@@ -10,7 +10,7 @@ const Contact = () => {
             <p className="font-poppins font-bold lg:text-web-body-2 text-web-body-2 text-spine-neutral-500 lg:text-left text-center">
               Whether you have questions about our services,
               want to discuss a potential collaboration,
-              or just feel like saying hello, we'd love to hear from you.
+              or just feel like saying hello, we&apos;d love to hear from you.
             </p>
           </div>
           <div className="flex flex-col lg:items-start items-center lg:space-y-5 space-y-4">

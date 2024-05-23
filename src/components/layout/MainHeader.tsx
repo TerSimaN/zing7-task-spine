@@ -68,7 +68,7 @@ const MainHeader = () => {
                             <ul className="space-y-2 py-6">
                                 {links.map((link, index) => (
                                     <li key={index}>
-                                        <Link href={link.href} className="block font-poppins font-bold text-web-body-2 -mx-3 px-3 py-2" onClick={() => setSelected(index)}>
+                                        <Link href={link.href} className="block font-poppins font-bold text-web-body-2 -mx-3 px-3 py-2" onClick={() => { setSelected(index); setOpen(!open); }}>
                                             {link.name}
                                         </Link>
                                     </li>

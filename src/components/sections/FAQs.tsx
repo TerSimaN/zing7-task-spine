@@ -13,19 +13,27 @@ const questions = [
   },
   {
     title: "How can Spine enhance my digital agency's narrative?",
-    body: `Add text here`
+    body: `Proin bibendum suscipit dui vitae ullamcorper. Nulla auctor sollicitudin eleifend. Fusce faucibus diam vel justo bibendum ultricies.
+    Pellentesque pellentesque pellentesque ex, sit amet pulvinar ex pretium non.
+    Aenean vel nulla libero. Morbi malesuada dui leo, eget accumsan justo fringilla id. Aenean dolor elit, luctus at tincidunt non, tristique vitae risus.`
   },
   {
     title: "What makes Spine different from other website solutions?",
-    body: `Add text here`
+    body: `Vestibulum mollis placerat lectus, sit amet facilisis diam. Aliquam eros mauris, ultrices in mattis id, varius non dolor.
+    Curabitur diam est, laoreet a vestibulum ac, sollicitudin elementum justo. Nullam nibh tellus, convallis at tristique nec, iaculis et nisi.
+    Vivamus maximus vehicula felis in consectetur.`
   },
   {
     title: "Is Spine suitable for agencies of all sizes?",
-    body: `Add text here`
+    body: `Nam faucibus et risus eget vestibulum. Morbi scelerisque lectus vel interdum semper. Proin quis lectus eu eros fermentum vehicula.
+    Vestibulum non erat venenatis, posuere velit et, condimentum tellus. Integer auctor sapien non eros sagittis eleifend.
+    Mauris at pulvinar nisi, nec molestie mauris. Suspendisse lobortis placerat ante vitae imperdiet.`
   },
   {
     title: "How can Spine help improve my agency's creativity?",
-    body: `Add text here`
+    body: `Nunc pellentesque nec leo sed maximus. Etiam vel ante tempor felis aliquet sagittis. In maximus diam vel felis efficitur, in posuere sapien euismod.
+    Quisque sollicitudin justo nec enim convallis, ut scelerisque dolor posuere. Nam fermentum dictum justo ut cursus.
+    Fusce sit amet bibendum tortor. Aliquam luctus lorem nec dolor iaculis suscipit.`
   }
 ];
 
@@ -42,7 +50,7 @@ const FAQs = () => {
             className="absolute lg:left-11 left-[6.5625rem] lg:top-[7.125rem] top-[1.125rem] z-10 lg:w-[14.8125rem] lg:h-[2.0625rem] w-[7.8125rem] h-[1.0625rem]"
           />
           <h1 className="font-sf-pro font-bold lg:text-web-display-2 text-display-2 text-spine-neutral-800">
-            Got Questions? We've Got Answers!
+            Got Questions? We&apos;ve Got Answers!
           </h1>
           <div className="flex space-x-3">
             <Image
