@@ -27,11 +27,14 @@ const config: Config = {
             800: '#0C0C0C'
           },
           'pale-lime': '#B4FF5C',
-          'anti-flash-white': '#F1F4F5'
+          'anti-flash-white': '#F1F4F5',
+          'pale-red': '#FE2A2A'
         },
       },
       fontFamily: {
+        inter: ['var(--font-inter)'],
         poppins: ['var(--font-poppins)'],
+        raleway: ['var(--font-raleway)'],
         'sf-pro': ['var(--font-sf-pro)']
       },
       fontSize: {
@@ -45,9 +48,11 @@ const config: Config = {
         'web-body-3': ['14px', '140%'],
         'button-1': ['18px', '120%'],
         'button-2': ['16px', '120%'],
+        'button-3': ['16px', '150%'],
         'display-1': ['48px', '110%'],
         'display-2': ['36px', '110%'],
         'display-3': ['14px', '110%'],
+        'display-4': ['14px', '120%'],
         'body-1': ['14px', '140%'],
         'body-2': ['12px', '140%']
       }
