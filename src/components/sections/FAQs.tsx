@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { arrow_caret_down, arrow_caret_up, faq_icon } from "../../../public/assets/icons"
 import { useState } from "react";
+import { underline_06 } from "../../../public/assets/images";
 
 const questions = [
   {
@@ -34,7 +35,12 @@ const FAQs = () => {
   return (
     <section id="faq" className="container lg:px-0 px-6 lg:pt-40 pt-[3.75rem] lg:pb-20 pb-10">
       <div className="flex flex-col lg:space-y-[3.75rem] space-y-10">
-        <div className="flex flex-col space-y-5 lg:mx-[6.25rem]">
+        <div className="relative flex flex-col gap-y-5 lg:mx-[6.25rem]">
+          <Image
+            src={underline_06}
+            alt="underline-06"
+            className="absolute lg:left-11 left-[6.5625rem] lg:top-[7.125rem] top-[1.125rem] z-10 lg:w-[14.8125rem] lg:h-[2.0625rem] w-[7.8125rem] h-[1.0625rem]"
+          />
           <h1 className="font-sf-pro font-bold lg:text-web-display-2 text-display-2 text-spine-neutral-800">
             Got Questions? We've Got Answers!
           </h1>

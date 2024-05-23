@@ -35,7 +35,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable} ${raleway.variable} ${sf_pro.variable} bg-gradient-to-b from-spine-pale-lime/50 via-white to-white lg:to-25% to-15%`}>
+      <body className={
+        `${inter.variable} ${poppins.variable} ${raleway.variable} ${sf_pro.variable} 
+         bg-gradient-to-b from-spine-pale-lime/50 via-white to-white lg:to-25% to-15%`
+      }>
         <MainHeader />
         {children}
         <MainFooter />
