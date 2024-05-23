@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter, Poppins, Raleway } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import MainHeader from "@/components/layout/MainHeader";
 import MainFooter from "@/components/layout/MainFooter";
 
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter'
+});
 const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
+const raleway = Raleway({
+  subsets: ['latin'],
+  variable: '--font-raleway'
 });
 const sf_pro = localFont({
   src: '../../public/assets/fonts/SF-Pro.ttf',
@@ -27,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${sf_pro.variable} bg-gradient-to-b from-spine-pale-lime/50 via-white to-white lg:to-50% to-35%`}>
+      <body className={`${inter.variable} ${poppins.variable} ${raleway.variable} ${sf_pro.variable} bg-gradient-to-b from-spine-pale-lime/50 via-white to-white lg:to-25% to-15%`}>
         <MainHeader />
         {children}
         <MainFooter />
