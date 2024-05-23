@@ -4,6 +4,8 @@ import FAQs from "@/components/sections/FAQs";
 import Header from "@/components/sections/Header";
 import Service from "@/components/sections/Service";
 import TrustedBrand from "@/components/sections/TrustedBrand";
+import Image from "next/image";
+import { services_bg_image } from "../../public/assets/images";
 
 export default function Home() {
   return (
@@ -11,7 +13,14 @@ export default function Home() {
       <Header />
       <TrustedBrand />
       <About />
-      <Service />
+      <section className="relative w-full max-w-screen-2xl">
+        <Image
+          src={services_bg_image}
+          alt="services bg image"
+          className="absolute inset-0 -z-10 object-cover opacity-20 w-full h-full"
+        />
+        <Service />
+      </section>
       <FAQs />
       <Contact />
     </main>
