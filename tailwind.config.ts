@@ -50,6 +50,19 @@ const config: Config = {
         'display-4': ['14px', '120%'],
         'body-1': ['14px', '140%'],
         'body-2': ['12px', '140%']
+      },
+      animation: {
+        slide: 'slide 8s linear alternate infinite'
+      },
+      keyframes: {
+        slide: {
+          from: {
+            transform: 'translateX(-30vw)'
+          },
+          to: {
+            transform: 'translateX(10vw)'
+          }
+        }
       }
     },
     container: {
