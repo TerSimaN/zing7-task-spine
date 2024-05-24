@@ -81,7 +81,7 @@ const MainHeader = () => {
                                 <Button
                                     btnText="Sign Up"
                                     btnHasIcon={false}
-                                    className="block border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 -mx-3 px-6 py-3"
+                                    className="block hover:bg-transparent/5 border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 -mx-3 px-6 py-3"
                                 />
                             </div>
                         </div>
