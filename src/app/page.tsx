@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <TrustedBrand />
       <About />
-      <section className="relative w-full max-w-screen-2xl">
+      <section className="relative w-full max-w-full">
         <Image
           src={services_bg_image}
           alt="services bg image"
