@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { arrow_east } from "../../../public/assets/icons"
+import Button from "../ui/Button"
 
 const ServiceCard = (props: {
     imgSrc: string,
@@ -23,13 +24,12 @@ const ServiceCard = (props: {
                     <h1 className="font-sf-pro font-bold lg:text-web-display-4 text-display-2 text-spine-neutral-800">{props.header}</h1>
                     <p className="font-poppins font-bold lg:text-web-body-2 text-body-1 text-spine-neutral-600">{props.text}</p>
                 </div>
-                <button className="flex items-center justify-between bg-spine-neutral-800 rounded-xl space-x-2 font-poppins font-bold text-button-2 text-white px-6 py-3 w-32">
-                    {props.btnText}
-                    <Image
-                        src={arrow_east}
-                        alt="arrow east"
-                    />
-                </button>
+                <Button
+                    btnText={props.btnText}
+                    btnHasIcon={true}
+                    btnIcon={{ btnIconSrc: arrow_east, btnIconAlt: "arrow east" }}
+                    className="bg-spine-neutral-800 hover:bg-spine-neutral-600 rounded-xl font-poppins font-bold text-button-2 text-white px-6 py-3 w-32"
+                />
             </div>
         </div>
     )

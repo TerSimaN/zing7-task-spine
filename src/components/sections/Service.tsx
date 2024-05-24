@@ -6,6 +6,7 @@ import ServiceCard from "../layout/ServiceCard";
 import ButtonRoundLeft from "../ui/ButtonRoundLeft";
 import ButtonRoundRight from "../ui/ButtonRoundRight";
 import { useState } from "react";
+import Button from "../ui/Button";
 
 const cards = [
   {
@@ -51,14 +52,16 @@ const Service = () => {
           <h1 className="font-sf-pro font-bold lg:text-web-display-2 text-display-2 text-spine-neutral-800 text-balance">
             Elevate Your Digital Presence
           </h1>
-          <div className="flex flex-col lg:space-y-7 space-y-8 max-w-[28.75rem]">
+          <div className="flex flex-col items-start lg:space-y-7 space-y-8 max-w-[28.75rem]">
             <p className="font-poppins font-bold lg:text-web-body-2 text-body-2 text-spine-neutral-600">
               Crafting digital masterpieces tailored to your brand, we turn concepts into visually stunning, user-friendly websites.
               Elevate your online identity with our cutting-edge web design and development services.
             </p>
-            <button className="border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3 w-[6.5rem]">
-              See All
-            </button>
+            <Button
+              btnText="See All"
+              btnHasIcon={false}
+              className="hover:bg-transparent/5 border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3"
+            />
           </div>
         </div>
         <div className="flex flex-col space-y-10">
@@ -100,7 +103,7 @@ const Service = () => {
                   setVisible(newValue);
                 }
               }}>
-                <ButtonRoundLeft />
+                <ButtonRoundLeft className="hover:fill-transparent/5" />
               </button>
               <button onClick={() => {
                 let newValue = visible + 1;
@@ -108,7 +111,7 @@ const Service = () => {
                   setVisible(newValue);
                 }
               }}>
-                <ButtonRoundRight />
+                <ButtonRoundRight className="hover:fill-spine-neutral-600" />
               </button>
             </div>
           </div>

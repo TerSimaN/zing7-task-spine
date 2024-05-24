@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react";
 import LogoMark from "../ui/LogoMark";
 import LogoTypo from "../ui/LogoTypo";
+import Button from "../ui/Button";
 
 const links = [
     { name: 'Home', href: '/' },
@@ -44,14 +45,16 @@ const MainHeader = () => {
                     ))}
                 </ul>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <button className="border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3">
-                        Sign Up
-                    </button>
+                    <Button
+                        btnText="Sign Up"
+                        btnHasIcon={false}
+                        className="hover:bg-transparent/5 border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3"
+                    />
                 </div>
             </nav>
             <div className={`lg:hidden ${open ? `` : `hidden`}`}>
                 <div className="fixed inset-0 z-50 bg-white"></div>
-                <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-b from-spine-pale-lime/50 via-spine-pale-lime/0 to-white px-6 py-6 sm:max-w-sm">
+                <div className="fixed inset-y-0 right-0 z-50 overflow-y-auto bg-gradient-to-b from-spine-pale-lime/50 via-spine-pale-lime/0 to-white px-6 py-6 w-full sm:max-w-sm">
                     <div className="flex items-center justify-between">
                         <Link href={'/'} className="flex items-end gap-x-1 -m-1.5 p-1.5" onClick={() => setOpen(!open)}>
                             <LogoMark className="fill-spine-neutral-800" />
@@ -75,7 +78,11 @@ const MainHeader = () => {
                                 ))}
                             </ul>
                             <div className="py-6">
-                                <button className="block bg-spine-pale-lime border rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 -mx-3 px-6 py-3">Sign Up</button>
+                                <Button
+                                    btnText="Sign Up"
+                                    btnHasIcon={false}
+                                    className="block border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 -mx-3 px-6 py-3"
+                                />
                             </div>
                         </div>
                     </div>

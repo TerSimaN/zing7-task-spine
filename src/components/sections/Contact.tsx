@@ -1,3 +1,5 @@
+import Button from "../ui/Button"
+
 const Contact = () => {
   return (
     <section id="contact" className="container lg:px-0 px-6 lg:pt-20 lg:pb-40 py-[3.75rem]">
@@ -71,9 +73,11 @@ const Contact = () => {
             </label>
             <textarea className="bg-spine-anti-flash-white rounded-xl resize-none px-6 py-4 h-[11.875rem]" name="message" id="message"></textarea>
           </div>
-          <button className="bg-spine-pale-lime rounded-xl font-inter font-bold text-button-3 text-spine-neutral-800 px-8 py-4">
-            Send Message
-          </button>
+          <Button
+            btnText="Send Message"
+            btnHasIcon={false}
+            className="bg-spine-pale-lime hover:bg-spine-pale-lime/80 rounded-xl font-inter font-bold text-button-3 text-spine-neutral-800 px-8 py-4"
+          />
         </form>
       </div>
     </section>

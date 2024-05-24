@@ -4,6 +4,7 @@ import LogoTypo from "../ui/LogoTypo"
 import FacebookLogo from "../ui/FacebookLogo"
 import TwitterLogo from "../ui/TwitterLogo"
 import InstagramLogo from "../ui/InstagramLogo"
+import Button from "../ui/Button"
 
 const menu_section_links = [
     { name: 'Home', href: '/' },
@@ -76,15 +77,17 @@ const MainFooter = () => {
                             <h1 className="font-poppins font-bold text-web-body-1 text-white lg:text-left text-center">
                                 Join our newsletter
                             </h1>
-                            <form className="flex flex-col lg:items-start items-center space-y-5">
+                            <form action={'#'} method="POST" className="flex flex-col lg:items-start items-center space-y-5">
                                 <input
                                     className="bg-transparent border-[0.5px] border-spine-neutral-100 placeholder:font-poppins placeholder:font-bold placeholder:text-body-2 placeholder:text-spine-neutral px-3 py-3 w-full"
                                     type="email"
                                     placeholder="Enter email address"
                                 />
-                                <button className="bg-spine-pale-lime rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3">
-                                    Get Start
-                                </button>
+                                <Button
+                                    btnText="Get Start"
+                                    btnHasIcon={false}
+                                    className="bg-spine-pale-lime hover:bg-spine-pale-lime/90 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3"
+                                />
                             </form>
                         </div>
                     </div>
