@@ -85,7 +85,6 @@ const MainFooter = () => {
                                 />
                                 <Button
                                     btnText="Get Start"
-                                    btnHasIcon={false}
                                     className="bg-spine-pale-lime hover:bg-spine-pale-lime/90 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3"
                                 />
                             </form>

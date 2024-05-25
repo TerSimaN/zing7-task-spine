@@ -47,7 +47,6 @@ const MainHeader = () => {
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                     <Button
                         btnText="Sign Up"
-                        btnHasIcon={false}
                         className="hover:bg-transparent/5 border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3"
                     />
                 </div>
@@ -80,7 +79,6 @@ const MainHeader = () => {
                             <div className="py-6">
                                 <Button
                                     btnText="Sign Up"
-                                    btnHasIcon={false}
                                     className="block hover:bg-transparent/5 border border-spine-neutral-800 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 -mx-3 px-6 py-3"
                                 />
                             </div>

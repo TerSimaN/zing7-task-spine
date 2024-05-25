@@ -5,7 +5,7 @@ import { no_icon } from "../../../public/assets/icons";
 const Button = (props: {
     className: string,
     btnText: string,
-    btnHasIcon: boolean,
+    btnHasIcon?: boolean,
     btnIcon?: {
         btnIconSrc: string | StaticImport,
         btnIconAlt: string

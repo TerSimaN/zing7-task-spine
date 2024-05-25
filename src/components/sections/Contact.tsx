@@ -75,7 +75,6 @@ const Contact = () => {
           </div>
           <Button
             btnText="Send Message"
-            btnHasIcon={false}
             className="bg-spine-pale-lime hover:bg-spine-pale-lime/80 rounded-xl font-inter font-bold text-button-3 text-spine-neutral-800 px-8 py-4"
           />
         </form>

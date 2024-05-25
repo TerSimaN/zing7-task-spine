@@ -23,7 +23,6 @@ const Header = () => {
           </div>
           <Button
             btnText="Start for free"
-            btnHasIcon={false}
             className="bg-spine-pale-lime hover:bg-spine-pale-lime/80 rounded-xl font-poppins font-bold text-button-2 text-spine-neutral-800 px-6 py-3.5"
           />
         </div>

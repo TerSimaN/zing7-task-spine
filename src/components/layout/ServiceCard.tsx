@@ -26,7 +26,7 @@ const ServiceCard = (props: {
                 </div>
                 <Button
                     btnText={props.btnText}
-                    btnHasIcon={true}
+                    btnHasIcon
                     btnIcon={{ btnIconSrc: arrow_east, btnIconAlt: "arrow east" }}
                     className="bg-spine-neutral-800 hover:bg-spine-neutral-600 rounded-xl font-poppins font-bold text-button-2 text-white px-6 py-3 w-32"
                 />
